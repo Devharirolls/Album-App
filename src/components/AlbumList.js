@@ -36,49 +36,4 @@ const styles = StyleSheet.create({
 
 export default AlbumList;
 
-// import React, { Component } from "react";
-// import { StyleSheet, Text, View, FlatList } from "react-native";
-// import axios from 'axios';
 
-// class AlbumList extends Component {
-//   state = { music_albums: [] }
-
-//   componentDidMount() {
-//     axios.get('http://9197-59-97-56-158.ngrok.io/music_albums')
-//       .then(response => this.setState({ music_albums: response.data }))
-//       .catch(error => console.error(error));
-//   }
-
-//   renderItem = ({ item }) => {
-//     return (
-//       <View style={styles.item}>
-//         <Text style={styles.textStyle}>{item.name}</Text>
-//       </View>
-//     );
-//   }
-
-//   render() {
-//     console.log(this.state);
-//     return (
-//       <FlatList
-//         data={this.state.music_albums}
-//         renderItem={this.renderItem}
-//         keyExtractor={(_item, index) => index.toString()}
-//       />
-//     );
-//   }
-// }
-
-// const styles = StyleSheet.create({
-//   item: {
-//     borderBottomWidth: 1,
-//     borderBottomColor: '#ccc',
-//     paddingVertical: 10,
-//     paddingHorizontal: 20
-//   },
-//   textStyle: {
-//     fontSize: 20
-//   }
-// });
-
-// export default AlbumList;
